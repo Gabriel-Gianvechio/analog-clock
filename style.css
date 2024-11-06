@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #172f00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.black{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;    
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.relogio {
+    background-image: url(background.jpg);
+    background-position: right;
+    background-size: 436px;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.numero {
+    position: absolute;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.riscos {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -3px;
+}
+.risco {
+    width: 140px;
+    height: 5px;
+    position: absolute;
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.risco .ponto {
+    width: 15px;
+    height: 100%;
+    background-color: #FFF;
+}
+
+
+.forte .ponto {
+    width: 30px;
+}
+
+.ponteiros {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -100%;
+}
+.p {
+    transform-origin: left; /* pois essa parte (LEFT) está centralizada no meio do relógio e queremos ela fixa para rotacionar o relógio ao redor do centro (se nao der transform left, então vai rotacionar a partir do centro da figura que é por natureza o eixo, por isso modificamos o eixo para esquerda) */
+    transform: rotate(0deg); 
+    border-radius: 50%;
+    position: absolute;
+}
+
+.p_s {
+    width: 100px;
+    height: 3px;
+    background-color: #F00;
+}
+.p_m {
+    width: 120px;
+    height: 7px;
+    background-color: #FFF;
+}
+.p_h {
+    width: 70px;
+    height: 10px;
+    background-color: #FFF;
+}
+.encaixe {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -7px;
+}
+.digital {
+    color: #FFF;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
